@@ -1,6 +1,5 @@
 # Recognise Faces using some classification algorithm - like Logistic, KNN, SVM etc.
 
-
 # 1. load the training data (numpy arrays of all the persons)
 		# x- values are stored in the numpy arrays
 		# y-values we need to assign for each person
@@ -39,8 +38,8 @@ def knn(train, test, k=5):
 	# Find max frequency and corresponding label
 	index = np.argmax(output[1])
 	return output[0][index]
+	
 ################################
-
 
 #Init Camera
 cap = cv2.VideoCapture(0)
